@@ -8,7 +8,7 @@
 </div><br>
 
 <p align="center"> Attribute connectivity is a <strong>Houdini</strong> SOP for <strong>indexing attributes</strong> by connectivity</p>     
-<img src="https://github.com/user-attachments/assets/9357d6c7-57d7-4770-b05f-cf0ef25bf223">
+<img src="https://github.com/user-attachments/assets/6d30a795-2625-4bab-afeb-919e209fd9db">
 
 # Overview
 The Attribute Connectivity sop provides **connected component labeling** for Houdini attributes using flood fill analysis.

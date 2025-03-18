@@ -1,9 +1,9 @@
 <h1 align="center">Attribute Connectivity</h1>
 
 <div align="center">
-  <a href="https://www.sidefx.com/"><img src="https://img.shields.io/badge/-HDK-FF4713?style=for-the-badge&logo=houdini&logoColor=FF4713&labelColor=282828"></a>
-  <a href="https://github.com/ParkerBritt?tab=repositories&q=&type=&language=c%2B%2B&sort="><img src="https://img.shields.io/badge/-C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=00599C&labelColor=282828"></a>
-  <a href="https://github.com/ParkerBritt?tab=repositories&q=&type=&language=python&sort="><img src="https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=3776AB&labelColor=282828"></a><br>
+  <a href="https://www.sidefx.com/"><img src="https://parkerbritt.com/badge?label=HDK&icon=houdini&color=FF4713"></a>
+  <a href="https://github.com/ParkerBritt?tab=repositories&q=&type=&language=c%2B%2B&sort="><img src="https://parkerbritt.com/badge?label=C%2B%2B&icon=cplusplus&color=00599C"></a>
+  <a href="https://github.com/ParkerBritt?tab=repositories&q=&type=&language=python&sort="><img src="https://parkerbritt.com/badge?label=Python&icon=python&color=3776AB"></a><br>
   <img src="https://parkerbritt.com/jenkins/buildStatus/icon?job=HDK_AttributeConnectivity&style=flat-square">
 </div><br>
 

@@ -7,8 +7,8 @@
   <img src="https://parkerbritt.com/jenkins/buildStatus/icon?job=HDK_AttributeConnectivity&style=flat-square">
 </div><br>
 
-<p align="center"> Attribute connectivity is a <strong>Houdini</strong> SOP for <strong>indexing attributes</strong> by connectivity</p>     
-<img src="https://github.com/user-attachments/assets/6d30a795-2625-4bab-afeb-919e209fd9db">
+<p align="center"> Attribute Connectivity is a <strong>Houdini</strong> surface operator for <strong>indexing attributes</strong> by connectivity.</p>     
+<img src="screenshots/thumbnail.png">
 
 # Overview
 The Attribute Connectivity sop provides **connected component labeling** for Houdini attributes using flood fill analysis.
@@ -16,16 +16,16 @@ In other words it provides an index based on attribute values.
 It achieves this by separating foreground and background components based on the threshold parameter, then assigning a unique index to each discontinuous island.
 
 
-This node was written in C++ using the HDK.
+This node was written in *C++* using the *HDK*.
 
 # Parameters
-| **Parameter**              | **Description**                                                                                                  |
-|--------------------------|--------------------------------------------------------------------------------------------------------------------|
-| **Group**               | A subset of points in the input geometry to run the program on. Leave this blank to affect all points in the input. |
-| **Include Whole Islands** | Include islands that have at least one point in the group.                                                        |
-| **Threshold**           | A threshold that separates the background and foreground values.                                                    |
-| **Attribute Name**      | Name of the attribute to analyze.                                                                                   |
-| **Output Index Attribute** | Name of the label attribute.                                                                                     |
+| **Parameter**              | **Type** | **Description**                                                                                                  |
+|----------------------------|----------|---------------------------------------------------------------------------------------------------------|
+| **Group**                  |String    | A subset of points in the input geometry to run the program on. Leave this blank to affect all points in the input. |
+| **Include Whole Islands**  |Toggle    | Include islands that have at least one point in the group.                                                        |
+| **Threshold**              |Float     | A threshold that separates the background and foreground values.                                                    |
+| **Attribute Name**         |String    | Name of the attribute to analyze.                                                                                   |
+| **Output Index Attribute** |String    | Name of the label attribute.                                                                                     |
 
 
 # Build
@@ -33,9 +33,8 @@ This node was written in C++ using the HDK.
 #### For Build
 - Cmake
 - ninja
-- Houdini 20.5.X
-> [!NOTE]
-> other versions will very likely work but are untested
+- Houdini 20.5.X (other version are likely to work but untested)
+
 #### For Tests
 - gtest
 - python 3.11
@@ -49,23 +48,6 @@ To compile the program you can run the build script that's included.
 The resulting .so file should be automatically placed in your ```$HOUDINI_USER_PREF_DIR/dso/``` directory.
 
 Next copy ```./static/SOP_attribconnectivity.svg``` to ```$HOUDINI_USER_PREF_DIR/config/icons/```
-
-# Class Diagram
-
-```mermaid
-classDiagram
-    class SOP_AttributeConnectivity {
-        - const GA_PointGroup* m_ptGrp
-        + SOP_AttributeConnectivity(OP_Network*, const char*, OP_Operator*)
-        + ~SOP_AttributeConnectivity()
-        + static OP_Node* myConstructor(OP_Network*, const char*, OP_Operator*)
-        + static GA_OffsetArray getNeighbourPtOffsets(const GU_Detail*, const GA_Offset)
-        + static unordered_set<GA_Offset> floodFill(...)
-        # OP_ERROR cookMySop(OP_Context&)
-    }
-
-    SOP_AttributeConnectivity --|> SOP_Node
-```
 
 # Example
 ### Input attribute visualized as color

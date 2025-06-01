@@ -56,7 +56,3 @@ Next copy ```./static/SOP_attribconnectivity.svg``` to ```$HOUDINI_USER_PREF_DIR
 ![image](https://github.com/user-attachments/assets/ce375d98-a9ba-4c87-bcd3-7aab488f2579)
 ### Output indexing values
 ![segmentation_example](https://github.com/user-attachments/assets/b99279e2-d80c-49e8-a11b-00a8b7753126)
-
-
-# Reference
-The HDK documentation and examples were used extensively in the development of this project.

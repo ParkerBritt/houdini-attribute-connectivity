@@ -4,7 +4,7 @@
   <a href="https://www.sidefx.com/"><img src="https://parkerbritt.com/badge?label=HDK&icon=houdini&color=FF4713"></a>
   <a href="https://github.com/ParkerBritt?tab=repositories&q=&type=&language=c%2B%2B&sort="><img src="https://parkerbritt.com/badge?label=C%2B%2B&icon=cplusplus&color=00599C"></a>
   <a href="https://github.com/ParkerBritt?tab=repositories&q=&type=&language=python&sort="><img src="https://parkerbritt.com/badge?label=Python&icon=python&color=3776AB"></a><br>
-  <img src="https://parkerbritt.com/jenkins/buildStatus/icon?job=HDK_AttributeConnectivity&style=flat-square">
+  <img src="https://parkerbritt.com/jenkins_badge?job=HDK_attributeconnectivity">
 </div><br>
 
 <p align="center"> Attribute Connectivity is a <strong>Houdini</strong> surface operator for <strong>indexing attributes</strong> by connectivity.</p>     
